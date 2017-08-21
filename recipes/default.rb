@@ -3,6 +3,5 @@
 # Recipe:: default
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
-template '/etc/hosts' do
-    source 'hosts.erb'
-end
+include_recipe 'centroid_base::hosts'
+include_recipe 'centroid_base::users'
